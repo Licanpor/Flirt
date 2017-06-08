@@ -1,0 +1,15 @@
+// headings
+.home__heading{
+	font-weight: $r-sbold;
+	margin: 35px 0 20px 0 !important;
+}
+.heading{
+	@include heading(20%);
+}
+
+.features__heading{
+	@include heading(40%);
+}
+.packages__heading{
+	@include heading(30%);
+}

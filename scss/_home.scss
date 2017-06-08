@@ -1,0 +1,19 @@
+.home__img{
+	width: 100%;
+
+	& img{
+		width: 100%;
+	}
+}
+.home__cta{
+	@include cta-sells;
+	border: 2px solid #fff;
+	margin-top: 20px;
+	background-color: transparent;
+}
+.header__bgd{
+	@include gradient-horizontal($start-color: #C300FF, $end-color: #25F9C7, $start-percent: 0%, $end-percent: 100%);
+	height: 100%;
+	width: 100%;
+	position: relative;
+}

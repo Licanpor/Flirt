@@ -1,0 +1,35 @@
+#performance{
+	background-color: $white;
+}
+.performance__item{
+	text-align: center;
+	// padding: 0 20px;
+}
+.performance__item--each{
+
+	@include border-radius(50%);
+	color:$white;
+	margin: auto;
+	background-color: $black;
+	font-size: 28px;
+	position: relative;
+	width: 52px;
+	height: 52px;
+
+	& p{
+		@include centerXY;
+		margin: 0;
+	}
+}
+.performance__item--each + p{
+	margin: 30px auto !important;
+}
+.performance__cta{
+	@include cta-sells;
+	@include gradient-horizontal($start-color: #7230FF, $end-color: #25F9C7, $start-percent: 0%, $end-percent: 100%);
+	color:$white;
+	margin: 50px auto;
+}
+.performance__icon{
+	width: $icon-item;
+}

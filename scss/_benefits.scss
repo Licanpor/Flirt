@@ -1,0 +1,33 @@
+.benefits__bgd{
+	@include gradient-directional($start-color: $purple, $end-color: $aqua, $deg: 135deg);
+	text-align: center;
+	height: 100%;
+}
+.benefits__container-icon + p{
+	margin: 30px auto !important;
+}
+#benefits{
+	height: 100%;
+}
+.benefits__container--icon{
+	margin:auto;
+	width: $icon-item;
+	height: $icon-item;
+}
+.benefits__icon{
+	width: 60%;
+}
+.benefits__cta{
+	width: $cta-sellsW;
+	height: $cta-sellsH;
+	cursor: pointer;
+	margin: 50px auto 80px auto;
+}
+.benefits__container--icon{
+	margin:auto;
+	width: $icon-item;
+	height: $icon-item;
+}
+.benefits__icon{
+	width: 60%;
+}

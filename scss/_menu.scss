@@ -1,0 +1,32 @@
+.menu--spacing{
+	padding: 20px 0;
+}
+.menu__hamburguer{
+	display: none;
+}
+.menu__main{
+	padding-top: 20px;
+	text-align: right;
+	z-index: $zindex-navbar;
+}
+.menu__items{
+	list-style: none;
+}
+.menu__items--each{
+	font-weight: $r-regular; 
+	display:inline-block;
+	position: relative;
+	margin-left: 50px;
+}
+.menu__items--link{
+	display:block;
+}
+.logo-flirt{
+	width: 100px;
+}
+
+@media screen and (max-width: 800px) {
+	.menu__hamburguer{
+		display: block;
+	}
+}
