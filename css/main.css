@@ -5944,8 +5944,7 @@ button.close {
   padding-top: 10px; }
 
 .features--graphic-content {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .features__container--icon {
   width: 80px;
@@ -5962,13 +5961,13 @@ button.close {
   width: 100%; }
 
 #features__graphic__1 img {
-  width: 50%; }
+  width: 50% !important; }
 
 #features__graphic__2 img {
-  width: 50%; }
+  width: 50% !important; }
 
 #features__graphic__3 img {
-  width: 50%; }
+  width: 50% !important; }
 
 .features__active::after {
   content: ' ';
@@ -5990,7 +5989,7 @@ button.close {
 #features {
   width: 100%; }
 
-#div1 {
+.features__graphicCol {
   overflow: hidden; }
 
 .testimonials__bgd {
