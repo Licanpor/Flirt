@@ -8,6 +8,10 @@ $(document).ready(function(){
 		$('#serv__packages').slideToggle(800);
 	});	
 
+	$(".features__container--icon a").on("click", function() {
+		$(".features__container--icon a").removeClass("features__active");
+		$(this).toggleClass("features__active");
+	});
 
 	// ----- TweenMax Animations
 	var benefits = $('#benefits');
@@ -16,7 +20,6 @@ $(document).ready(function(){
 	var features__mainRow = $('#features__mainRow');
 	var tl = new TimelineMax({});
 	// var tl_featuresMenu = new TimelineMAx();
-
 
 	TweenMax.set('#features', {
 		position: 'absolute',
@@ -28,7 +31,7 @@ $(document).ready(function(){
 	});
 
 	tl
-		.to('#benefits__text', 0.2, {
+		.to('#benefits__text', 0.4, {
 			y:'-110%'
 		})
 		.fromTo('#benefits', 0.2, 
@@ -42,17 +45,24 @@ $(document).ready(function(){
 				position:'absolute',
 				zIndex: -1,
 				opacity: 0}
-		}, '-=0.2')	
-		.to('#features', 0, {
+		}, '-=0.3')	
+		.to('#features', 0.2, {
 			position: 'relative',
 			opacity: 1,
 			overflow: 'hidden'
-		})
-		.from('#features__mainRow', 0.2, 
-			{css: {
-				y: '120%'
-			}});
+		}, '-=0.2')
+		.call(menu_active, this, "+=0.5");
 
+		function menu_active() {			
+		
+			new ScrollMagic.Scene({
+				triggerElement: '#features__mainRow',
+				triggerHook: 0,
+				duration: $('#features__mainRow').height()
+			})
+			.setPin('#features__mainRow').addTo(controller);
+		}
+		
 	// ----- Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
 
@@ -70,11 +80,6 @@ $(document).ready(function(){
 		colorEnd: 'transparent'
 	})
 	.addTo(controller);
-
-
-	
-
-
 });
 
 
