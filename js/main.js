@@ -1,8 +1,8 @@
 // console.log('\'Allo \'Allo!');
 
 $(document).ready(function(){
-	var rowHeight = $('#features__mainRow').height();
-	$('.features__graphicCol').height(rowHeight);
+	var colHeight = $('#features__menu__container').height();
+	$('.features__graphicCol').height(colHeight);
 	$('.onoffswitch-label').click(function(){
 		$('#prod__packages').slideToggle(800);
 		$('#serv__packages').slideToggle(800);
