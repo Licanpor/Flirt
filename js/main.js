@@ -21,14 +21,9 @@ $(document).ready(function(){
 	var tl = new TimelineMax({});
 	// var tl_featuresMenu = new TimelineMAx();
 
-	TweenMax.set('#features', {
-		position: 'absolute',
-		top: 0,	
-		opacity: 0
-	});
-	TweenMax.set('#features__mainRow', {	
-		opacity: 1
-	});
+	// TweenMax.set('#features__mainRow', {	
+	// 	opacity: 1
+	// });
 
 	tl
 		.to('#benefits__text', 0.4, {
@@ -46,21 +41,32 @@ $(document).ready(function(){
 				zIndex: -1,
 				opacity: 0}
 		}, '-=0.3')	
-		.to('#features', 0.2, {
+		.fromTo('#features', 0.2, 
+			{css:{
+				position: 'absolute',
+				top: 0,	
+				opacity: 0
+			}},
+			{css:{
 			position: 'relative',
 			opacity: 1,
 			overflow: 'hidden'
-		}, '-=0.2')
+		}}, '-=0.2')
 		.call(menu_active, this, "+=0.5");
 
 		function menu_active() {			
 		
 			new ScrollMagic.Scene({
-				triggerElement: '#features__mainRow',
-				triggerHook: 0,
 				duration: $('#features__mainRow').height()
 			})
-			.setPin('#features__mainRow').addTo(controller);
+			.setPin('#features__mainRow')
+			.addIndicators({
+				name: 'mainRow',
+				colorTrigger: 'black',
+				colorStart: 'red',
+				colorEnd: 'blue'
+			})
+			.addTo(controller);
 		}
 		
 	// ----- Init ScrollMagic
@@ -70,14 +76,14 @@ $(document).ready(function(){
 	var pinContent = new ScrollMagic.Scene({
 		triggerElement: '#pin__content',
 		triggerHook: 0,
-		duration: $(window).height() * 6
+		duration: $(window).height() * 10
 	})
 	.setPin('#pin__content').setTween(tl)
 	.addIndicators({
-		name: '_',
-		colorTrigger: 'transparent',
-		colorStart: 'transparent',
-		colorEnd: 'transparent'
+		name: 'pin1',
+		colorTrigger: 'pink',
+		colorStart: 'aqua',
+		colorEnd: 'orange'
 	})
 	.addTo(controller);
 });
