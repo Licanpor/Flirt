@@ -6,6 +6,7 @@
 }
 .features__item{
 	padding-top:10px;
+	margin: 10px 0;
 }
 .features--graphic-content{
 	//@include centerXY;
@@ -13,19 +14,22 @@
 	height: 100%;
 }
 .features__container--icon{
-	width: 80px;
-	height: 80px;
-	margin: 0 auto;
+	margin: 0;
+	width: 100%;
+	height: 100%;
 
 	& img[src="img/features-item-1.svg"]{
-		width: 75%;
+		width: 23%;
 	}
 	& img[src="img/features-item-2.svg"]{
-		width: 85%;
+		width: 25%;
 	}
 	& img[src="img/features-item-3.svg"]{
-		width: 90%;
+		width: 25%;
 	}
+}
+.features__icon{
+	margin-bottom: 10px;
 }
 .features__img{
 	width: 100%;
@@ -45,16 +49,20 @@
 		width: 50% !important;
 	}
 }
-.features__active::after{
-	content: ' ';
-	width: 30px;
-	height: 100%;
-	left: 165px;
-	@include centerY;
-	background-image: url('../img/flecha.svg');
-	background-repeat: no-repeat;
-	background-size: 15px;
-	background-position: 50%;
+// #features__active1,#features__active2,#features__active3{
+// 	height: 100%;
+// 	text-align: right;
+// }
+.features__active {
+	 	width: 30px;
+		height: 30px;
+	
+	// left: 165px;
+	// @include centerY;
+	// background-image: url('../img/flecha.svg');
+	// background-repeat: no-repeat;
+	// background-size: 15px;
+	// background-position: 50%;
 }
 #features{
 	width: 100%;

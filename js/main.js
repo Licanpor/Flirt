@@ -52,22 +52,16 @@ $(document).ready(function(){
 			opacity: 1,
 			overflow: 'hidden'
 		}}, '-=0.2')
-		.call(menu_active, this, "+=0.5");
+		.fromTo('#features__active1', 0.2, {css: {display:'inline-block'}}, {css: {display: 'none'}})		
+		.to('#features__graphic__1', 0.2, {y:'-50%'}, '-=0.2')
 
-		function menu_active() {			
-		
-			new ScrollMagic.Scene({
-				duration: $('#features__mainRow').height()
-			})
-			.setPin('#features__mainRow')
-			.addIndicators({
-				name: 'mainRow',
-				colorTrigger: 'black',
-				colorStart: 'red',
-				colorEnd: 'blue'
-			})
-			.addTo(controller);
-		}
+	  .fromTo('#features__active2', 0.2, {css: {display:'none'}}, {css: {display: 'inline-block'}})
+	  .to('#features__graphic__2', 0.2, {y:'-50%'}, '-=0.2')
+
+	  .to('#features__active2', 0.2, {display: 'none'})
+
+	  .fromTo('#features__active3', 0.2, {css: {display:'none'}}, {css: {display: 'inline-block'}})
+	  .to('#features__graphic__3', 0.2, {y:'-50%'}, '-=0.2')
 		
 	// ----- Init ScrollMagic
 	var controller = new ScrollMagic.Controller();

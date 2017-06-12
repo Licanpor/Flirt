@@ -5941,22 +5941,26 @@ button.close {
   text-align: center; }
 
 .features__item {
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin: 10px 0; }
 
 .features--graphic-content {
   width: 100%;
   height: 100%; }
 
 .features__container--icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto; }
+  margin: 0;
+  width: 100%;
+  height: 100%; }
   .features__container--icon img[src="img/features-item-1.svg"] {
-    width: 75%; }
+    width: 23%; }
   .features__container--icon img[src="img/features-item-2.svg"] {
-    width: 85%; }
+    width: 25%; }
   .features__container--icon img[src="img/features-item-3.svg"] {
-    width: 90%; }
+    width: 25%; }
+
+.features__icon {
+  margin-bottom: 10px; }
 
 .features__img {
   width: 100%; }
@@ -5970,22 +5974,9 @@ button.close {
 #features__graphic__3 img {
   width: 50% !important; }
 
-.features__active::after {
-  content: ' ';
+.features__active {
   width: 30px;
-  height: 100%;
-  left: 165px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  background-image: url("../img/flecha.svg");
-  background-repeat: no-repeat;
-  background-size: 15px;
-  background-position: 50%; }
+  height: 30px; }
 
 #features {
   width: 100%;
