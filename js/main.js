@@ -2,7 +2,9 @@
 
 $(document).ready(function(){
 	var colHeight = $('#features__menu__container').height();
+	console.log(colHeight);
 	$('.features__graphicCol').height(colHeight);
+	console.log($('.features__graphicCol').height());
 	$('.onoffswitch-label').click(function(){
 		$('#prod__packages').slideToggle(800);
 		$('#serv__packages').slideToggle(800);
@@ -26,7 +28,7 @@ $(document).ready(function(){
 	// });
 
 	tl
-		.to('#benefits__text', 0.4, {
+		.to('#benefits__text', 0.2, {
 			y:'-110%'
 		})
 		.fromTo('#benefits', 0.2, 
@@ -40,7 +42,7 @@ $(document).ready(function(){
 				position:'absolute',
 				zIndex: -1,
 				opacity: 0}
-		}, '-=0.3')	
+		}, '-=0.15')	
 		.fromTo('#features', 0.2, 
 			{css:{
 				position: 'absolute',
@@ -51,17 +53,19 @@ $(document).ready(function(){
 			position: 'relative',
 			opacity: 1,
 			overflow: 'hidden'
-		}}, '-=0.2')
-		.fromTo('#features__active1', 0.2, {css: {display:'inline-block'}}, {css: {display: 'none'}})		
-		.to('#features__graphic__1', 0.2, {y:'-50%'}, '-=0.2')
+		}}, '-=0.1')
+		.fromTo('#features__active1', 0.03, {css: {display:'inline-block'}}, {css: {display: 'none'}})		
+		.to('#features__graphic__1', 0.12, {y:'-100%'}, '-=0.06')
 
-	  .fromTo('#features__active2', 0.2, {css: {display:'none'}}, {css: {display: 'inline-block'}})
-	  .to('#features__graphic__2', 0.2, {y:'-50%'}, '-=0.2')
 
-	  .to('#features__active2', 0.2, {display: 'none'})
+	  .fromTo('#features__active2', 0.015, {css: {display:'none'}}, {css: {display: 'inline-block'}},'-=0.045')
+	  .to('#features__graphic__2', 0.12, {y:'-100%'}, '-=0.06')
+	  .to('#features__graphic__2', 0.08, {y:'-200%'}, '+=0.1')
+	  .to('#features__active2', 0.015, {display: 'none'}, '-=0.06')
 
-	  .fromTo('#features__active3', 0.2, {css: {display:'none'}}, {css: {display: 'inline-block'}})
-	  .to('#features__graphic__3', 0.2, {y:'-50%'}, '-=0.2')
+
+	  .fromTo('#features__active3', 0.03, {css: {display:'none'}}, {css: {display: 'inline-block'}},'-=0.03')
+	  .to('#features__graphic__3', 0.12, {y:'-200%'}, '-=0.06')
 		
 	// ----- Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
@@ -70,7 +74,7 @@ $(document).ready(function(){
 	var pinContent = new ScrollMagic.Scene({
 		triggerElement: '#pin__content',
 		triggerHook: 0,
-		duration: $(window).height() * 10
+		duration: $(window).height() * 7
 	})
 	.setPin('#pin__content').setTween(tl)
 	.addIndicators({
