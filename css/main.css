@@ -5953,11 +5953,11 @@ button.close {
   width: 100%;
   height: 100%; }
   .features__container--icon img[src="img/features-item-1.svg"] {
-    width: 60px; }
+    width: 29%; }
   .features__container--icon img[src="img/features-item-2.svg"] {
-    width: 65px; }
+    width: 31%; }
   .features__container--icon img[src="img/features-item-3.svg"] {
-    width: 65px; }
+    width: 31%; }
 
 .features__icon {
   margin-bottom: 10px; }
@@ -5966,13 +5966,13 @@ button.close {
   width: 100%; }
 
 #features__graphic__1 img {
-  width: 50% !important; }
+  width: 60% !important; }
 
 #features__graphic__2 img {
-  width: 50% !important; }
+  width: 60% !important; }
 
 #features__graphic__3 img {
-  width: 50% !important; }
+  width: 60% !important; }
 
 #features__graphic__1 .valign-wrapper, #features__graphic__2 .valign-wrapper, #features__graphic__3 .valign-wrapper {
   height: 100%; }

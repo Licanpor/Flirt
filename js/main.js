@@ -55,12 +55,12 @@ $(document).ready(function(){
 			overflow: 'hidden'
 		}}, '-=0.1')
 		.fromTo('#features__active1', 0.03, {css: {display:'inline-block'}}, {css: {display: 'none'}})		
-		.to('#features__graphic__1', 0.12, {y:'-100%'}, '-=0.06')
+		.to('#features__graphic__1', 0.12, {y:'-110%'}, '-=0.06')
 
 
 	  .fromTo('#features__active2', 0.015, {css: {display:'none'}}, {css: {display: 'inline-block'}},'-=0.045')
 	  .to('#features__graphic__2', 0.12, {y:'-100%'}, '-=0.06')
-	  .to('#features__graphic__2', 0.08, {y:'-200%'}, '+=0.1')
+	  .to('#features__graphic__2', 0.12, {y:'-210%'}, '+=0.1')
 	  .to('#features__active2', 0.015, {display: 'none'}, '-=0.06')
 
 
