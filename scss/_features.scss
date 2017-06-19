@@ -7,6 +7,10 @@
 .features__item{
 	padding-top:30px;
 	height: calc(33.3333% - (59.5px / 3));
+
+	& p{
+		margin-top: 10px !important;
+	}
 }
 .features--graphic-content{
 	//@include centerXY;
@@ -29,7 +33,8 @@
 	}
 }
 .features__icon{
-	margin-bottom: 10px;
+	// margin-bottom: 10px;
+	// @include centerY;
 }
 .features__img{
 	width: 100%;
@@ -54,21 +59,9 @@
 	 	height: 100%;
 	 }
 }
-
-// #features__active1,#features__active2,#features__active3{
-// 	height: 100%;
-// 	text-align: right;
-// }
 .features__active {
-	 	width: 30px;
-		height: 30px;
-	
-	// left: 165px;
-	// @include centerY;
-	// background-image: url('../img/flecha.svg');
-	// background-repeat: no-repeat;
-	// background-size: 15px;
-	// background-position: 50%;
+	 	width: 35px;
+		height: 35px;
 }
 #features{
 	width: 100%;
