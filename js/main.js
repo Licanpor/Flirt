@@ -31,19 +31,18 @@ $(document).ready(function(){
 		.fromTo('#benefits', 0.2, {opacity: 1, zIndex: 0}, {opacity: 0}, '-=0.15')	
 		.fromTo('#features', 0.2, {position: 'absolute', top: 0, opacity: 0, zIndex: -1}, {opacity: 1, zIndex: 1, overflow: 'hidden'}, '-=0.1')
 
-		.fromTo('#features__active1', 0.03, {css: {display:'none'}}, {css: {display:'inline-block'}}) 				
-		.from('#features__graphic__1', 0.15, {ease: Circ.easeOut, y:'110%'}, '-=0.06')
-		.to('#features__graphic__1', 0.12, {y:0}, '-=0.09')
+		.fromTo('#features__active1', 0.03, {css: {display:'none'}}, {css: {display:'inline-block'}}, '-=0.12') 				
+		.from('#features__graphic__1', 0.12, {ease: Circ.easeOut, y:'110%'}, '-=0.12')
 		.to('#features__graphic__1', 0.21, {ease: Circ.easeIn, y:'-110%'}, '+=0.06')
-		.to('#features__active1', 0.018, {display: 'none'}, '-=0.13')
+		.to('#features__active1', 0.018, {display: 'none'}, '-=0.03')
 
-	  .fromTo('#features__active2', 0.015, {css: {display:'none'}}, {css: {display: 'inline-block'}},'-=0.07')
-	  .to('#features__graphic__2', 0.15, {ease: Circ.easeOut, y:'-100%'})//, '-=0.09'
-	  .to('#features__graphic__2', 0.21, {ease: Circ.easeIn, y:'-210%'}, '+=0.09')
-	  .to('#features__active2', 0.018, {display: 'none'}, '-=0.13')
+	  .fromTo('#features__active2', 0.03, {css: {display:'none'}}, {css: {display: 'inline-block'}})
+	  .to('#features__graphic__2', 0.15, {ease: Circ.easeOut, y:'-100%'}, '-=0.06')
+	  .to('#features__graphic__2', 0.21, {ease: Circ.easeIn, y:'-200%'}, '+=0.06')
+	  .to('#features__active2', 0.018, {display: 'none'}, '-=0.03')
 
-	  .fromTo('#features__active3', 0.03, {css: {display:'none'}}, {css: {display: 'inline-block'}},'-=0.03')
-	  .to('#features__graphic__3', 0.18, {ease: Circ.easeOut, y:'-200%'})//, '-=0.09'
+	  .fromTo('#features__active3', 0.03, {css: {display:'none'}}, {css: {display: 'inline-block'}})
+	  .to('#features__graphic__3', 0.18, {ease: Circ.easeOut, y:'-200%'}, '-=0.06')
 
 	// ----- Init ScrollMagic
 	var controller = new ScrollMagic.Controller();
