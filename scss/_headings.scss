@@ -1,7 +1,7 @@
 // headings
 .home__heading{
 	font-weight: $r-sbold;
-	margin: 35px 0 20px 0 !important;
+	margin: 35px 0 20px 0 ;
 }
 .heading{
 	@include heading(20%);

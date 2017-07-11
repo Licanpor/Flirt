@@ -13,7 +13,7 @@
 	list-style: none;
 }
 .menu__items--each{
-	font-weight: $r-regular; 
+	font-weight: $r-regular;
 	display:inline-block;
 	position: relative;
 	margin-left: 50px;
@@ -28,5 +28,23 @@
 @media screen and (max-width: 800px) {
 	.menu__hamburguer{
 		display: block;
+	}
+	.menu--spacing{
+		padding-left:5%;
+		padding-right: 5%;
+	}
+	.menu__btn{
+		display: block;
+		text-align: right;
+		text-decoration: none;
+	}
+	.md-36{
+		font-size: 36px !important;
+	}
+	.menu__main{
+		display: none;
+	}
+	.header__content{
+		padding: 0 5%;
 	}
 }

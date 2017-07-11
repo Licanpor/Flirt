@@ -1,3 +1,9 @@
+.home__container{
+	height: calc(100% - 26.057% - 91.5px);
+}
+.home__section{
+	margin-top: 2%;
+}
 .home__img{
 	width: 100%;
 
@@ -16,4 +22,12 @@
 	height: 100%;
 	width: 100%;
 	position: relative;
+}
+@media screen and (max-width: 800px) {
+	.home__heading{
+		    margin: 0 0 20px 0 !important;
+	}
+	.home__cta{
+		margin: 20px auto 0 auto;
+	}
 }

@@ -3,14 +3,14 @@ $(document).ready(function(){
 	$('.onoffswitch-label').click(function(){
 		$('#prod__packages').slideToggle(800);
 		$('#serv__packages').slideToggle(800);
-	});	
+	});
 
- //  var prev1 = $('.header__bgd').height();
- //  console.log('altura del primer div: ' + prev1);
- //  var prev2 = $('#performance').height();
- //  console.log('altura del segundo div: ' + prev2);
- //  var prevDivs = prev1 + prev2;
- //  console.log('suman: ' + prevDivs);
+  // var prev1 = $('.header__bgd').height();
+  // console.log('altura del primer div: ' + prev1);
+  // var prev2 = $('#performance').height();
+  // console.log('altura del segundo div: ' + prev2);
+  // var prevDivs = prev1 + prev2;
+  // console.log('suman: ' + prevDivs);
 	// var sPane = prevDivs - 100;
 	// console.log(sPane);
 
@@ -28,10 +28,10 @@ $(document).ready(function(){
 		.play(tween)
 
 		.to('#benefits__text', 0.2, {y:'-110%'})
-		.fromTo('#benefits', 0.2, {opacity: 1, zIndex: 0}, {opacity: 0}, '-=0.15')	
+		.fromTo('#benefits', 0.2, {opacity: 1, zIndex: 0}, {opacity: 0}, '-=0.15')
 		.fromTo('#features', 0.2, {position: 'absolute', top: 0, opacity: 0, zIndex: -1}, {opacity: 1, zIndex: 1, overflow: 'hidden'}, '-=0.1')
 
-		.fromTo('#features__active1', 0.03, {css: {display:'none'}}, {css: {display:'inline-block'}}, '-=0.12') 				
+		.fromTo('#features__active1', 0.03, {css: {display:'none'}}, {css: {display:'inline-block'}}, '-=0.12')
 		.from('#features__graphic__1', 0.12, {ease: Circ.easeOut, y:'110%'}, '-=0.12')
 		.to('#features__graphic__1', 0.21, {ease: Circ.easeIn, y:'-110%'}, '+=0.06')
 		.to('#features__active1', 0.018, {display: 'none'}, '-=0.03')
