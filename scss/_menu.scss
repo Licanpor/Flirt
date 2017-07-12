@@ -26,12 +26,11 @@
 }
 
 @media screen and (max-width: 800px) {
+	.logo-flirt{
+		width: 70px;
+	}
 	.menu__hamburguer{
 		display: block;
-	}
-	.menu--spacing{
-		padding-left:5%;
-		padding-right: 5%;
 	}
 	.menu__btn{
 		display: block;
@@ -39,7 +38,7 @@
 		text-decoration: none;
 	}
 	.md-36{
-		font-size: 36px !important;
+		font-size: 30px !important;
 	}
 	.menu__main{
 		display: none;

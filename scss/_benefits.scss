@@ -31,3 +31,20 @@
 .benefits__icon{
 	width: 60%;
 }
+
+// ------------------------ MOBILE ----------------
+	.benefits__mobile{
+		& .row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		& .valign{
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 800px) {
+	.benefits__cta{
+		width: $cta-sellsW-mob;
+		height: $cta-sellsH-mob;
+	}
+}

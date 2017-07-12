@@ -23,11 +23,34 @@
 	width: 100%;
 	position: relative;
 }
+.home__path{
+	position: absolute;
+	bottom: 0;
+	height:100%;
+	width: 100%;
+}
 @media screen and (max-width: 800px) {
 	.home__heading{
 		    margin: 0 0 20px 0 !important;
+				font-size: 2rem;
+	}
+	.home__info{
+		& p{
+			font-size: 0.9em;
+		}
 	}
 	.home__cta{
 		margin: 20px auto 0 auto;
+		padding: 7px;
+		width: $cta-sellsW-mob;
+		height: $cta-sellsH-mob;
+		& h5{
+			font-size: 0.75em;
+			font-weight: bold;
+		}
+	}
+	.home__path-mobile{
+		position: absolute;
+		bottom: 0;
 	}
 }

@@ -55,12 +55,13 @@
 					</section>
 				</div>
 			</div>
-			<div style="position: relative;">
-			  <img src="img/white-path-unseen.svg" alt="">
-			  <img class="header__path" style="position: absolute; bottom: 0; left:0;" src="img/white-path.svg" alt="">
+			<img class="hidden-md hidden-lg home__path-mobile" src="img/white-path.svg" alt="">
+			<div class="hidden-xs hidden-sm" style="position: relative; height:31.1%; width:100%; float:left; bottom:0;">
+				<img class="hidden-xs hidden-sm" src="img/white-path-unseen.svg" alt="">
+				<img class="home__path" src="img/white-path.svg" alt="">
 			</div>
 		</div>
-		<section id="performance" style="position: relative;">
+		<section id="performance" class="hidden-xs hidden-sm" >
 			<div class="container" >
 				<div class="row margin-b">
 					<div class="col-xs-12 col-sm-12 col-md-12-col-lg-12">
@@ -101,10 +102,65 @@
 			<div id="divider1" class="row divider__row">
 				<div class="col-xs-12 col-sm-12 col-md-12-col-lg-12 divider__container">
 					<img class="" src="img/divider-unseen.svg" alt="">
-					<img class="divider" src="img/divider.svg" alt="">
+					<img class="divider divider__mob" src="img/divider.svg" alt="">
 				</div>
 			</div>
 		</section>
+		<div class="performance__mobile hidden-md hidden-lg">
+			<div class="row margin-b">
+				<div class="col-xs-12 col-sm-12 col-md-12-col-lg-12">
+					<h3 class="heading"><u>Cómo funciona</u></h3>
+				</div>
+			</div>
+			<div class="row">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 performance__item">
+								<div class="performance__item--each">
+									<p>1</p>
+								</div>
+								<p class="">Crea una cuenta personal <br> o de la empresa</p>
+								<img class="performance__icon" src="img/performance-item-1.svg" alt="ICONO">
+							</div>
+				    </div>
+				    <div class="item">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 performance__item">
+								<div class="performance__item--each">
+									<p>2</p>
+								</div>
+								<p class="">Llena los campos necesarios <br> y sube tus archivos</p>
+								<img class="performance__icon" src="img/performance-item-2.svg" alt="ICONO">
+							</div>
+				    </div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 performance__item">
+								<div class="performance__item--each">
+									<p>3</p>
+								</div>
+								<p class="">Publica y empieza <br> a vender al instante</p>
+								<img class="performance__icon" src="img/performance-item-3.svg" alt="ICONO">
+							</div>
+				    </div>
+				  </div>
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				  	<img class="arrow__slide" src="img/mobile-arrowB-prev.svg" alt="arrow">
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <img class="arrow__slide" src="img/mobile-arrowB-next.svg" alt="arrow">
+				  </a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12-col-lg-12">
+					<div class="performance__cta">
+						<h5>QUIERO AUMENTAR MIS VENTAS</h5>
+					</div>
+				</div>
+			</div>
+		 </div><!-- /performance_mobile -->
 		<div id="pin__content" style="position: relative; height: 100%">
 			<section id="benefits" class="benefits__bgd">
 				<div style="position: relative;">

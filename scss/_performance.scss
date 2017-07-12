@@ -1,12 +1,12 @@
 #performance{
 	background-color: $white;
+	position: relative;
 }
 .performance__item{
 	text-align: center;
 	// padding: 0 20px;
 }
 .performance__item--each{
-
 	@include border-radius(50%);
 	color:$white;
 	margin: auto;
@@ -15,9 +15,15 @@
 	position: relative;
 	width: 52px;
 	height: 52px;
-
 	& p{
-		@include centerXY;
+		position: absolute;
+	  left: 50%;
+	  top:50%;
+	  transform: translate(-50%, -56%);
+	  -webkit-transform: translate(-50%, -56%);
+	     -moz-transform: translate(-50%, -56%);
+	      -ms-transform: translate(-50%, -56%);
+	       -o-transform: translate(-50%, -56%);
 		margin: 0;
 	}
 }
@@ -32,4 +38,37 @@
 }
 .performance__icon{
 	width: $icon-item;
+}
+
+// ------------------------ MOBILE ----------------
+	.performance__mobile{
+		background-color: $white;
+		& .row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	@media screen and (max-width: 800px) {
+	.arrow__slide{
+		width: 30%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+    transform: translate(-50%,-50%);
+	}
+	.performance__cta{
+		padding: 7px;
+		width: $cta-sellsW-mob;
+		height: $cta-sellsH-mob;
+		& h5{
+			font-size: 0.75em;
+			font-weight: bold;
+		}
+		@include gradient-horizontal($start-color: #7230FF, $end-color: #25F9C7, $start-percent: 0%, $end-percent: 100%);
+		color:$white;
+		margin: 50px auto;
+	}
+	.performance__icon{
+		width: 100px;
+	}
 }

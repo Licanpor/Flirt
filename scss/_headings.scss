@@ -13,3 +13,8 @@
 .packages__heading{
 	@include heading(30%);
 }
+@media screen and (max-width: 800px) {
+	.heading{
+		@include heading(66%);
+	}
+}
