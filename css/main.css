@@ -5419,6 +5419,7 @@ button.close {
   overflow: hidden;
   width: 100%; }
   .carousel-inner > .item {
+    height: 100%;
     display: none;
     position: relative;
     -webkit-transition: 0.6s ease-in-out left;
@@ -5919,7 +5920,8 @@ button.close {
   width: 80px; }
 
 .performance__mobile {
-  background-color: #fff; }
+  background-color: #fff;
+  height: 100%; }
   .performance__mobile .row {
     margin-left: 0;
     margin-right: 0; }
@@ -5981,20 +5983,32 @@ button.close {
   width: 80px;
   height: 80px; }
 
-.benefits__icon {
-  width: 60%; }
-
-.benefits__mobile .row {
-  margin-left: 0;
-  margin-right: 0; }
-
-.benefits__mobile .valign {
-  width: 100%; }
+.benefits__mobile {
+  position: relative; }
+  .benefits__mobile .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .benefits__mobile .valign {
+    width: 100%; }
+  .benefits__mobile .valign-wrapper {
+    height: 100%; }
 
 @media screen and (max-width: 800px) {
   .benefits__cta {
     width: 70vw;
-    height: 15vw; } }
+    height: 15vw;
+    margin-bottom: 50px; }
+  .benefits__cta-row {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .benefits__icon {
+    width: 70%; }
+  .benefits__container--icon {
+    margin-bottom: 20px; }
+  .margin-b {
+    margin-bottom: 30px !important; } }
 
 .features__bgd {
   background-color: #4B5463;
@@ -6025,15 +6039,8 @@ button.close {
 
 .features__img {
   width: 100%; }
-
-#features__graphic__1 img {
-  width: 60% !important; }
-
-#features__graphic__2 img {
-  width: 60% !important; }
-
-#features__graphic__3 img {
-  width: 60% !important; }
+  .features__img img {
+    width: 60%; }
 
 #features__graphic__1 .valign-wrapper, #features__graphic__2 .valign-wrapper, #features__graphic__3 .valign-wrapper {
   height: 100%; }
@@ -6051,6 +6058,19 @@ button.close {
 
 .features__icon__col {
   height: calc(100% - 42px); }
+
+.features__mobile .carousel-inner {
+  height: 100%; }
+
+.features__mobile .features__item-row {
+  display: flex;
+  flex-flow: column wrap; }
+
+.features__mobile .features__icon {
+  width: 10%; }
+
+.features__mobile .features__imgimg {
+  width: 10%; }
 
 .testimonials__bgd {
   background-image: -webkit-linear-gradient(left, #7230FF 0%, #25F9C7 100%);

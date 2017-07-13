@@ -28,23 +28,40 @@
 	width: $icon-item;
 	height: $icon-item;
 }
-.benefits__icon{
-	width: 60%;
-}
 
 // ------------------------ MOBILE ----------------
-	.benefits__mobile{
-		& .row{
-			margin-left: 0;
-			margin-right: 0;
-		}
-		& .valign{
-			width: 100%;
-		}
+.benefits__mobile{
+	position: relative;
+	& .row{
+		margin-left: 0;
+		margin-right: 0;
 	}
-	@media screen and (max-width: 800px) {
+	& .valign{
+		width: 100%;
+	}
+	& .valign-wrapper{
+		height: 100%;
+	}
+}
+@media screen and (max-width: 800px) {
 	.benefits__cta{
 		width: $cta-sellsW-mob;
 		height: $cta-sellsH-mob;
+		margin-bottom: 50px;
+	}
+	.benefits__cta-row{
+		position: absolute;
+		bottom: 0;
+		left:50%;
+		transform: translateX(-50%)
+	}
+	.benefits__icon{		
+		width: 70%;		
+	}
+	.benefits__container--icon{
+		margin-bottom:20px ;
+	}
+	.margin-b{
+		margin-bottom:30px !important;
 	}
 }
